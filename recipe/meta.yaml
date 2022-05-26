@@ -1,15 +1,15 @@
-{% set name = 'magic' %}
-{% set version = '8.3.276' %}
+{% set name = "magic" %}
+{% set version = "8.3.286" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-   url: https://github.com/RTimothyEdwards/magic/archive/refs/tags/{{ version }}.tar.gz
-   sha256: 24247d6de94c1668acb7b49d68c43c41bd4f1617846ebbfaaaacfef68e487550
-   patches:
-     - csh.patch
+  url: https://github.com/RTimothyEdwards/magic/archive/refs/tags/{{ version }}.tar.gz
+  sha256: b62dff1f0e09bbd6abecf30051934ba0d7ad8a80ff7a9ffea828e1a91c9f9c2e
+  patches:
+    - csh.patch
 
 build:
   number: 0
@@ -29,18 +29,18 @@ requirements:
     - cairo
   run:
     # missing run_exports
-    - xorg-libx11    
-    
+    - xorg-libx11
+
 test:
   commands:
     - magic -dnull -noconsole --version
 
 about:
   home: http://opencircuitdesign.com/magic/
-  license: MIT  
+  license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Magic VLSI Layout Tool'
+  summary: Magic VLSI Layout Tool
   description: |
     Magic is a venerable VLSI layout tool, written in the 1980's at Berkeley by John Ousterhout, now famous primarily for writing the scripting interpreter language Tcl.
     Due largely in part to its liberal Berkeley open-source license, magic has remained popular with universities and small companies.

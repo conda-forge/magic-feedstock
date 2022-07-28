@@ -12,8 +12,8 @@ source:
     - csh.patch
 
 build:
-  number: 0
-  skip: true  # [not linux64]
+  number: 2
+  skip: true  # [win or osx]
 
 requirements:
   build:

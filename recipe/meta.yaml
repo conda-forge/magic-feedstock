@@ -27,6 +27,7 @@ requirements:
     - tk
     - xorg-libx11
     - cairo
+    - zlib
   run:
     # missing run_exports
     - xorg-libx11

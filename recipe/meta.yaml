@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/RTimothyEdwards/magic/archive/refs/tags/{{ version }}.tar.gz
   sha256: 1d0bb00dbb16814eb77d7d4cff5c0ce58b9cb6d0c8c5d5659bea8dec49fddedc
-  patches:
-    - csh.patch
 
 build:
   number: 0

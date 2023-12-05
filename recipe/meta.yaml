@@ -1,5 +1,5 @@
 {% set name = "magic" %}
-{% set version = "8.3.452" %}
+{% set version = "8.3.453" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/RTimothyEdwards/magic/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 69f66ffaff0bc5099ca4ea76bf97a73d8ade369605baa4d951ebbb4e3d6eebf8
+  sha256: 8f0e73153dab6f4e3d3ffc2a376f0cd125e9120436e9032ed815ab6637d11aa8
 
 build:
   number: 0
